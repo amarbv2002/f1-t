@@ -1,0 +1,205 @@
+/* Averia Font */
+@font-face {
+    font-family: 'Avinear Next';
+    src: url("../fonts/AvenirNextLTPro-Bold.otf");
+}
+
+/* Averia Font light*/
+@font-face {
+    font-family: 'Avinear Next light';
+    src: url("../fonts/AvenirNextLTPro-Regular.otf");
+}
+
+/* Main CSS variables */
+:root {
+    --primary-font: 'Avinear Next', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --primary-color: #33A0D9;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --gray-color: #e5e5e5;
+}
+
+/* Main CSS variables ends */
+
+/* Default custom css starts */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--black-color);
+    color: var(--primary-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avinear Next', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+nav.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar a {
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.navbar a:hover {
+    color: var(--white-color);
+}
+
+.navbar li {
+    margin-right: 76px;
+}
+
+.navbar li:nth-child(3) {
+    margin-right: 0;
+}
+
+.nav-btn {
+    width: 144px;
+    height: 54px;
+    background-color: var(--white-color);
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn a {
+    text-decoration: none;
+}
+
+.nav-btn a:hover {
+    color: var(--primary-color);
+}
+
+/* Main area */
+.main-area {
+    background-color: #f2f2f2;
+    background-image: url("../img/Back\ drop\ 1.png");
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 50%;
+}
+
+.main-content {
+    padding: 183px 0px 246px 0px;
+}
+
+.main-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.main-content .form {
+    margin-top: 30px;
+}
+
+.main-content h4 {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.205em;
+}
+
+.main-content h4:nth-child(3) {
+    margin-top: 58px;
+}
+
+.main-content p {
+    font-family: 'Avenir Next light', sans-serif;
+    font-size: 22px;
+    max-width: 543px;
+}
+
+.main-content input {
+    width: 417px;
+    height: 45px;
+    background: #F2F2F2;
+    border: 3px solid #000000;
+    border-radius: 2px;
+}
+
+@media (max-width: 470px) {
+    .main-content input {
+        width: 300px;
+    }
+}
+
+.checkpsw-input {
+    border: 3px solid #EB5757 !important;
+}
+
+.main-content button {
+    display: block;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.205em;
+    color: #FFFFFF;
+    padding: 17px 64px;
+    text-transform: uppercase;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.main-content button:nth-child(3) {
+    margin-top: 45px;
+    padding: 17px 100px;
+}
+
+p#checkpsw {
+    position: absolute;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    color: #EB5757;
+    max-width: 417px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+/* Footer */
+
+footer {
+    background: #2180B3;
+    padding: 26px 0px;
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+footer li a {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff !important;
+}
+
+footer li {
+    margin-right: 49px;
+}
+
+/* footer li:nth-child(3) {
+    margin-right: 49px;
+} */
